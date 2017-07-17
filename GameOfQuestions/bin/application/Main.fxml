@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="387.0" prefWidth="449.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <ImageView fitHeight="487.0" fitWidth="447.0" layoutX="1.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/f3e5e3f01f84f654657201e82fbdb8af.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="but1" disable="true" layoutX="28.0" layoutY="141.0" mnemonicParsing="false" onAction="#setAnswer1" opacity="0.78" prefHeight="42.0" prefWidth="173.0" style="-fx-border-color: white;">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font></Button>
+      <Button fx:id="but2" disable="true" layoutX="247.0" layoutY="141.0" mnemonicParsing="false" onAction="#setAnswer2" opacity="0.78" prefHeight="42.0" prefWidth="173.0" style="-fx-border-color: white;">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font></Button>
+      <Button fx:id="but3" disable="true" layoutX="28.0" layoutY="221.0" mnemonicParsing="false" onAction="#setAnswer3" opacity="0.78" prefHeight="42.0" prefWidth="173.0" style="-fx-border-color: white;">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font></Button>
+      <Button fx:id="but4" disable="true" layoutX="247.0" layoutY="221.0" mnemonicParsing="false" onAction="#setAnswer4" opacity="0.78" prefHeight="42.0" prefWidth="173.0" style="-fx-border-color: white;">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font></Button>
+      <Button layoutX="29.0" layoutY="301.0" mnemonicParsing="false" onAction="#setQuest" prefHeight="53.0" prefWidth="259.0" text="Next Question">
+         <font>
+            <Font name="Arial" size="22.0" />
+         </font></Button>
+      <Label fx:id="ansLabel" layoutX="29.0" layoutY="75.0" prefHeight="33.0" prefWidth="392.0" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></Label>
+      <Label fx:id="question" alignment="CENTER" layoutX="29.0" layoutY="33.0" prefHeight="42.0" prefWidth="392.0" text="Are You Ready?" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></Label>
+      <Button fx:id="but5" disable="true" layoutX="305.0" layoutY="301.0" mnemonicParsing="false" onAction="#checkAnswer" prefHeight="53.0" prefWidth="115.0" text="Check ">
+         <font>
+            <Font name="Arial" size="22.0" />
+         </font></Button>
+      <Label fx:id="counterLabel" layoutX="28.0" layoutY="354.0" prefHeight="33.0" prefWidth="392.0" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="198.0" layoutY="358.0" mnemonicParsing="false" onAction="#putScoreInDB" text="Button" />
+   </children>
+</AnchorPane>
